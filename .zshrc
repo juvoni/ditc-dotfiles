@@ -39,7 +39,7 @@ EOBUNDLES
 
 antigen apply
 
-export PATH=/usr/local/depot_tools:$PATH
+export PATH=/usr/local/depot_tools:/usr/local/sbin:$PATH
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
