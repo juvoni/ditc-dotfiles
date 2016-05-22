@@ -79,7 +79,7 @@ alias gcob="git checkout -b"
 alias gco="git checkout"
 alias gba="git branch -a"
 alias gcp="git cherry-pick"
-alias gl="git lg"
+alias gl="git log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
 alias gpom="git pull origin master"
 
 # turn on coloring on grep
