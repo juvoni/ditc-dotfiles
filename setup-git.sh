@@ -5,6 +5,7 @@ git config --global user.email "michael@mgmcdermott.com"
 # Aliases
 git config --global alias.st "status --short --branch"
 git config --global alias.cma "commit -a -m"
+git config --global alias.unstage "reset HEAD"
 ## Diff-prose
 git config --global alias.dp "diff --word-diff --unified=10"
 ## Quick merge
@@ -17,6 +18,8 @@ git config --global alias.so "show --pretty='parent %Cred%p%Creset commit %Cred%
 ## Only paginate info like git diff if needed
 git config --global core.pager 'less -RFX'
 
-# Algorithms
-## Always use histogram algorithm in diff (git >1.8.2)
+# Always use histogram algorithm in diff (git >1.8.2)
 git config --global diff.algorithm histogram
+
+# Use OSX Keychain for git credentials
+git config --global credential.helper osxkeychain
