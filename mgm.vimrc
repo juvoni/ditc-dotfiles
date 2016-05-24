@@ -63,6 +63,12 @@ set t_Co=256
 set formatoptions-=t
 set nowrap
 set cursorline
+set number
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=2
+set scrolloff=5
 
 syntax enable
 colorscheme oceanicnext
