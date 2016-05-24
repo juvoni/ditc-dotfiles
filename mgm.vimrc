@@ -69,6 +69,7 @@ set smartindent
 set expandtab
 set shiftwidth=2
 set scrolloff=5
+set linespace=4
 
 syntax enable
 colorscheme oceanicnext
