@@ -62,11 +62,9 @@ set colorcolumn=100
 set t_Co=256
 set formatoptions-=t
 set nowrap
+set cursorline
 
 syntax enable
 colorscheme oceanicnext
 set background=dark
 
-if exists("g:loaded_webdevicons")
-    call webdevicons#refresh()
-endif
