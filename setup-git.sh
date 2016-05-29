@@ -18,6 +18,8 @@ git config --global alias.so "show --pretty='parent %Cred%p%Creset commit %Cred%
 ## Only paginate info like git diff if needed
 git config --global core.pager 'less -RFX'
 
+git config --global core.editor "atom --wait"
+
 # Always use histogram algorithm in diff (git >1.8.2)
 git config --global diff.algorithm histogram
 
