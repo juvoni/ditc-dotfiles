@@ -10,6 +10,8 @@ else
     brew update
 fi
 
+brew install git
+brew install git-extras
 brew install zsh
 brew install gnupg
 
@@ -24,6 +26,7 @@ brew cask install virtualbox
 brew cask install caffeine
 brew cask install the-unarchiver
 brew cask install transmit
+brew cask install transmission
 brew cask install evernote
 
 brew cask cleanup

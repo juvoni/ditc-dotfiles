@@ -9,9 +9,13 @@ antigen bundle command-not-found
 
 antigen bundles <<EOBUNDLES
 
+z
+npm
+git
 lein
 pip
 gradle
+
 
 # Guess what to install when running an unknown command.
 command-not-found
@@ -39,7 +43,9 @@ EOBUNDLES
 
 antigen apply
 
-export PATH=/usr/local/depot_tools:/usr/local/sbin:$PATH
+eval $(thefuck --alias)
+
+export PATH=/usr/local/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
@@ -62,6 +68,7 @@ alias karma='./node_modules/karma/bin/karma'
 alias marathonctl='marathonctl -h http://elizabeth:8080 -u maayanlab:systemsbiology'
 
 alias undopush="git push -f origin HEAD^:master"
+alias gg="clear; git st 2>/dev/null || (pwd && ls -a)"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias ga="git add"
