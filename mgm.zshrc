@@ -14,17 +14,12 @@ git
 lein
 pip
 gradle
-command-not-found
-
 
 # Guess what to install when running an unknown command.
 command-not-found
 
 # Helper for extracting different types of archives.
 extract
-
-# Help working with version control systems.
-git
 
 # nicoulaj's moar completion files for zsh
 zsh-users/zsh-completions src
