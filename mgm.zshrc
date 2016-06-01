@@ -2,12 +2,11 @@
 
 source $HOME/dev/dotfiles/antigen/antigen.zsh
 
-antigen bundle git
-antigen bundle pip
-antigen bundle lein
-antigen bundle command-not-found
-
 antigen bundles <<EOBUNDLES
+
+# Pure theme with zsh-async
+mafredri/zsh-async
+sindresorhus/pure
 
 z
 npm
@@ -15,6 +14,7 @@ git
 lein
 pip
 gradle
+command-not-found
 
 
 # Guess what to install when running an unknown command.
@@ -29,19 +29,20 @@ git
 # nicoulaj's moar completion files for zsh
 zsh-users/zsh-completions src
 
-# ZSH port of Fish shell's history search feature.
-zsh-users/zsh-history-substring-search
-
 # Syntax highlighting bundle.
 zsh-users/zsh-syntax-highlighting
 
-# Pure theme with zsh-async
-mafredri/zsh-async
-sindresorhus/pure
+# ZSH port of Fish shell's history search feature.
+zsh-users/zsh-history-substring-search
 
 EOBUNDLES
 
 antigen apply
+
+# zsh-history-substring-search settings
+zmodload zsh/terminfo
+bindkey "$terminfo[cuu1]" history-substring-search-up
+bindkey "$terminfo[cud1]" history-substring-search-down
 
 eval $(thefuck --alias)
 
@@ -88,6 +89,9 @@ alias gba="git branch -a"
 alias gcp="git cherry-pick"
 alias gl="git log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
 alias gpom="git pull origin master"
+
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
 
 # turn on coloring on grep
 alias fgrep='fgrep --color=auto'
