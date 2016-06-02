@@ -14,6 +14,7 @@ brew install git
 brew install git-extras
 brew install zsh
 brew install gnupg
+brew install thefuck
 
 brew cask install atom
 brew cask install java
