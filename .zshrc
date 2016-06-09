@@ -41,6 +41,9 @@ bindkey "$terminfo[cud1]" history-substring-search-down
 
 eval $(thefuck --alias)
 
+# Ignore duplicates in history.
+setopt HIST_IGNORE_ALL_DUPS
+
 export PATH=/usr/local/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
