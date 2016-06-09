@@ -25,6 +25,7 @@ brew cask install dash
 brew cask install iterm2
 brew cask install virtualbox
 brew cask install caffeine
+brew cask install shiftit
 brew cask install the-unarchiver
 brew cask install transmit
 brew cask install transmission
