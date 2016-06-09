@@ -1,3 +1,10 @@
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/opt/go/libexec/bin:$GOPATH/bin:$PATH
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+export GOPATH=$HOME/go
+export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home)
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
 # Load antigen and plugins/themes
 
 source $HOME/dev/dotfiles/antigen/antigen.zsh
@@ -44,19 +51,6 @@ eval $(thefuck --alias)
 # Ignore duplicates in history.
 setopt HIST_IGNORE_ALL_DUPS
 
-export PATH=/usr/local/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH
-
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-
-export GOPATH=$HOME/go
-export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home)
-export PATH=$PATH:/usr/local/bin:/usr/local/opt/go/libexec/bin:$GOPATH/bin:~/bin:/usr/local/hadoop-2.5.0/bin
-
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/mmcdermott/.docker/machine/machines/default"
-export DOCKER_MACHINE_NAME="default"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias hosts='sudo vi /etc/hosts'
