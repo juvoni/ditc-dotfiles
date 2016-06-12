@@ -6,6 +6,7 @@ git config --global user.email "michael@mgmcdermott.com"
 git config --global alias.st "status --short --branch"
 git config --global alias.cma "commit -a -m"
 git config --global alias.unstage "reset HEAD"
+git config --global alias.undo "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
 ## Diff-prose
 git config --global alias.dp "diff --word-diff --unified=10"
 ## Quick merge
