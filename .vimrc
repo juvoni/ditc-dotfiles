@@ -20,8 +20,6 @@ Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-markdown'
@@ -42,11 +40,6 @@ Plugin 'ryanoasis/vim-devicons'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 let g:syntastic_javascript_checkers = ['eslint']
@@ -74,4 +67,3 @@ set linespace=4
 syntax enable
 colorscheme oceanicnext
 set background=dark
-
