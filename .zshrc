@@ -1,11 +1,15 @@
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/opt/go/libexec/bin:$GOPATH/bin:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/opt/go/libexec/bin:$PATH
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
-export GOPATH=$HOME/go
 export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home)
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 # Load antigen and plugins/themes
+
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.103:2376"
+export DOCKER_CERT_PATH="/Users/mcdermmg/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
 
 source $HOME/dev/dotfiles/antigen/antigen.zsh
 
@@ -53,12 +57,8 @@ setopt HIST_IGNORE_ALL_DUPS
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias hosts='sudo vi /etc/hosts'
+alias hosts='sudo vim /etc/hosts'
 alias fixMongo='sudo chown -R $USER /data'
-alias editBash='sudo vim ~/.bash_profile'
-alias gulp='node_modules/.bin/gulp'
-alias karma='./node_modules/karma/bin/karma'
-alias marathonctl='marathonctl -h http://elizabeth:8080 -u maayanlab:systemsbiology'
 
 alias undopush="git push -f origin HEAD^:master"
 alias gg="clear; git st 2>/dev/null || (pwd && ls -a)"
@@ -82,9 +82,12 @@ alias gcp="git cherry-pick"
 alias gl="git log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
 alias gpom="git pull origin master"
 
+alias rmni="rm -rf node_modules/ && npm install --cache-min 999999"
+alias ni="npm install --cache-min 999999"
 alias nis="npm install --save"
 alias nisd="npm install --save-dev"
 
 # turn on coloring on grep
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias grep='grep --color=auto'
