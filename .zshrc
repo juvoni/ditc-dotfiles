@@ -22,15 +22,15 @@ sindresorhus/pure
 z
 npm
 git
-lein
-pip
-gradle
+# lein
+# pip
+# gradle
 
 # Guess what to install when running an unknown command.
-command-not-found
+# command-not-found
 
 # Helper for extracting different types of archives.
-extract
+# extract
 
 # nicoulaj's moar completion files for zsh
 zsh-users/zsh-completions src
