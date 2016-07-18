@@ -7,19 +7,19 @@ module.exports = {
     fontFamily: 'Droid Sans Mono for Powerline',
 
     // terminal cursor background color (hex)
-    cursorColor: '#d0d2d1',
+    cursorColor: '#373b41',
 
     // color of the text
-    foregroundColor: '#d0d2d1',
+    foregroundColor: '#c5c8c6',
 
     // terminal background color
-    backgroundColor: '#27292c',
+    backgroundColor: '#1d1f21',
 
     // border color (window, tabs)
     borderColor: '#333',
 
     // custom css to embed in the main window
-    css: '',
+    css: '.title_1i8co95 { color: #c5c8c6 !important }',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     termCSS: '',
@@ -30,22 +30,23 @@ module.exports = {
     // some color overrides. see http://bit.ly/29k1iU2 for
     // the full list
     colors: [
-      '#000000',
-      '#ff0000',
-      '#33ff00',
-      '#ffff00',
-      '#0066ff',
-      '#cc00ff',
-      '#00ffff',
-      '#d0d0d0',
-      '#808080',
-      '#ff0000',
-      '#33ff00',
-      '#ffff00',
-      '#0066ff',
-      '#cc00ff',
-      '#00ffff',
-      '#ffffff'
+      "#1d1f21",
+      "#cc6666",
+      "#b5bd68",
+      "#f0c674",
+      "#81a2be",
+      "#b57880",
+      "#8abeb7",
+      "#282a2e",
+      "#969896",
+      "#cc6666",
+      "#b5bd68",
+      "#f0c674",
+      "#81a2be",
+      "#b57880",
+      "#8abeb7",
+      "#ffffff",
+      "#c5c8c6"
     ]
   },
 
@@ -56,7 +57,6 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-snazzy',
     'hypercwd'
   ],
 
