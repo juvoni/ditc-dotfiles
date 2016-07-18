@@ -7,10 +7,10 @@ module.exports = {
     fontFamily: 'Droid Sans Mono for Powerline',
 
     // terminal cursor background color (hex)
-    cursorColor: '#373b41',
+    cursorColor: '#d0d2d1',
 
     // color of the text
-    foregroundColor: '#c5c8c6',
+    foregroundColor: '#d0d2d1',
 
     // terminal background color
     backgroundColor: '#1d1f21',
