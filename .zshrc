@@ -60,6 +60,8 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias hosts='sudo vim /etc/hosts'
 alias fixMongo='sudo chown -R $USER /data'
 
+alias ∞="npm run start"
+
 alias undopush="git push -f origin HEAD^:master"
 alias gg="clear; git st 2>/dev/null || (pwd && ls -a)"
 alias gd="git diff"
@@ -81,6 +83,7 @@ alias gba="git branch -a"
 alias gcp="git cherry-pick"
 alias gl="git log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
 alias gpom="git pull origin master"
+alias gfr="git fetch && git rebase"
 
 alias rmni="rm -rf node_modules/ && npm install --cache-min 999999"
 alias ni="npm install --cache-min 999999"
