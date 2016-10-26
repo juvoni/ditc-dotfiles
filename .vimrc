@@ -21,21 +21,12 @@ Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-markdown'
 Plugin 'bling/vim-airline'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mattn/emmet-vim'
 Plugin 'valloric/youcompleteme'
-Plugin 'ervandew/supertab'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mhartington/oceanic-next'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -1,6 +1,6 @@
 # User settings
 git config --global user.name "Michael McDermott"
-git config --global user.email "michael@mgmcdermott.com"
+# git config --global user.email "michael@mgmcdermott.com"
 
 # Aliases
 git config --global alias.st "status --short --branch"
@@ -8,7 +8,7 @@ git config --global alias.cma "commit -a -m"
 git config --global alias.cane "commit --amend --no-edit"
 git config --global alias.unstage "reset HEAD"
 git config --global alias.undo "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
-git config --global alias.append = '!git cherry-pick $(git merge-base HEAD $1)..$1'
+git config --global alias.append '!git cherry-pick $(git merge-base HEAD $1)..$1'
 ## Diff-prose
 git config --global alias.dp "diff --word-diff --unified=10"
 ## Quick merge
@@ -28,3 +28,13 @@ git config --global diff.algorithm histogram
 
 # Use OSX Keychain for git credentials
 git config --global credential.helper osxkeychain
+
+# Colors
+git config --global color.ui auto
+git config --global color.branch auto
+git config --global color.diff auto
+git config --global color.interactive auto
+git config --global color.status auto
+git config --global color.grep auto
+git config --global color.decorate auto
+git config --global color.showbranch auto

@@ -58,7 +58,7 @@ setopt HIST_IGNORE_ALL_DUPS
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias hosts='sudo vim /etc/hosts'
-alias fixMongo='sudo chown -R $USER /data'
+alias anpm='SASS_BINARY_SITE=http://artifactory.es.ad.adp.com:8081/artifactory/simple/sass/node-sass/releases/download node --stack-size=3936 /Users/mcdermmg/n/bin/npm --build-from-source'
 
 alias ∞="npm run start"
 
@@ -83,7 +83,7 @@ alias gba="git branch -a"
 alias gcp="git cherry-pick"
 alias gl="git log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
 alias gpom="git pull origin master"
-alias gfr="git fetch && git rebase"
+alias gpr="git pull --rebase"
 
 alias rmni="rm -rf node_modules/ && npm install --cache-min 999999"
 alias ni="npm install --cache-min 999999"
