@@ -22,9 +22,7 @@ sindresorhus/pure
 z
 npm
 git
-# lein
-# pip
-# gradle
+petervanderdoes/git-flow-completion
 
 # Guess what to install when running an unknown command.
 # command-not-found

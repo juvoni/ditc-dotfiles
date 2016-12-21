@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Droid Sans Mono for Powerline',
+    fontFamily: 'Operator Mono',
 
     // terminal cursor background color (hex)
     cursorColor: '#d0d2d1',
@@ -57,7 +57,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hypercwd'
+    'hyper-snazzy'
   ],
 
   // in development, you can create a directory under
